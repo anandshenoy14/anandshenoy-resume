@@ -37,6 +37,9 @@ progress {
 template {
   display: none;
 }
+h1 > a {
+  font-size: 30px;
+}
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
