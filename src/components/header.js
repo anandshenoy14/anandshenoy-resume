@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import "./profile.css"
+import ProfileImage from "./profileImage"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -24,6 +26,7 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
+          <ProfileImage fileName="profile1-a.jpg"/>
         </Link>
       </h1>
     </div>

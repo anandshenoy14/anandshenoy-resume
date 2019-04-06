@@ -4,8 +4,6 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import "./profile.css"
-import ProfileImage from "./profileImage"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,8 +28,8 @@ const Layout = ({ children }) => (
             borderTop : 0
           }}
         >
-          <ProfileImage fileName="profile1-a.jpg"/>
           <main>{children}</main>
+          <i data-feather="circle"></i>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
