@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import Card from "../components/card"
 
 import Header from "./header"
 import "./layout.css"
@@ -28,8 +29,10 @@ const Layout = ({ children }) => (
             borderTop : 0
           }}
         >
-          <main>{children}</main>
-          <i data-feather="circle"></i>
+          <main>
+            {children}
+            <Card before="June 2014" after="May 2019"/>
+          </main>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
