@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 0`,
         maxWidth: 960,
-        paddingLeft : 25
+        paddingLeft: 25
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -26,11 +26,13 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
-          <ProfileImage fileName="profile1-a.jpg"/>
+          <ProfileImage fileName="profile1-a.jpg" />
         </Link>
       </h1>
     </div>
+    
   </header>
+  
 )
 
 Header.propTypes = {
