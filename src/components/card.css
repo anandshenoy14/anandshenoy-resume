@@ -2,11 +2,11 @@
     margin : 20px;
   }
   .card{
-    height : 200px;
     box-shadow: -1px 1px 3px 3px #96A0A3;
     position: relative;
     padding-right : 0px;
     overflow : hidden;
+    margin-bottom: 1rem;
   }
   .date-banner::after{
     font-family: 'Helvetica Neue';

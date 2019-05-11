@@ -6,6 +6,7 @@ import LineOfDots from "../components/lineofdots"
 import AddressLine from "../components/addressline"
 import PhoneNumberLine from "../components/phonenumberline"
 import Icon from "../components/Icon"
+import Data from "../components/data"
 
 
 const IndexPage = () => (
@@ -20,11 +21,9 @@ const IndexPage = () => (
       </div>
       <div className="right-section">
       <div className="social-wrapper">
-        <Icon type="twitter" link="https://twitter.com/anandshenoy14"/>
-        <Icon type="facebook" link="https://www.facebook.com/anand.shenoy14"/>
-        <Icon type="github" link="https://github.com/anandshenoy14"/>
-        <Icon type="download" link="../docs/Resume-AnandShenoyEbay_Word_v20190217.pdf"/>
-        <Icon type="mail" link="mailto:anand.shenoy14@gmail.com"/>
+        {Data.icons.map((icon)=>(
+            <Icon type={icon.type} link={icon.link}/>
+        ))}
       </div>
         <LineOfDots></LineOfDots>
       </div>
