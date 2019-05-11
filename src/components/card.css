@@ -1,0 +1,38 @@
+.cards-container{
+    margin : 20px;
+  }
+  .card{
+    box-shadow: -1px 1px 3px 3px #96A0A3;
+    position: relative;
+    padding-right : 0px;
+    overflow : hidden;
+    margin-bottom: 1rem;
+  }
+  .date-banner::after{
+    font-family: 'Helvetica Neue';
+    content : attr(data-after);
+    transform: translate(25%, 50%) rotate(45deg);
+    transform-origin: center;
+    background-color: midnightblue;
+    color : white;
+    position : absolute;
+    text-align : center;
+    padding : 4px 30px;
+    font-size : 0.8rem;
+    top : 0px;
+    right : 0px;
+  }
+  .date-banner::before{
+    font-family: 'Helvetica Neue';
+    content : attr(data-before);
+    transform: translate(-25%, 50%) rotate(-45deg);
+    transform-origin: center;
+    background-color: midnightblue;
+    color : white;
+    position : absolute;
+    text-align : center;
+    padding : 5px 36px;
+    font-size : 0.8rem;
+    top : 0px;
+    left : 0px;
+  }

@@ -1,8 +1,9 @@
 import React from "react"
+import Icon from "../components/Icon"
 
 const PhoneNumberLine = () => (
     <div className="phone-no-line">
-        <i data-feather="phone"></i>
+        <Icon type="phone" link="tel:424-26263-14"/>
         <span className="address">424-26263-14</span>
     </div>
 )

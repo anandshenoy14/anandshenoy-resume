@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import Card from "../components/card"
+import Data from "../components/data"
 
 import Header from "./header"
 import "./layout.css"
@@ -12,6 +14,11 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            cards{
+              beforeYear
+              afterYear
+              lines
+            }
           }
         }
       }
@@ -28,8 +35,12 @@ const Layout = ({ children }) => (
             borderTop : 0
           }}
         >
-          <main>{children}</main>
-          <i data-feather="circle"></i>
+          <main>
+            {children}
+            {Data.cards.map((card) => (
+              <Card beforeYear={card.beforeYear} afterYear={card.afterYear} title={card.title} lines={card.lines} />
+            ))}
+          </main>
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}

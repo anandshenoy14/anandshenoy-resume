@@ -3,6 +3,16 @@ module.exports = {
     title: `Anand P Shenoy`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    cards : [
+      {
+        "beforeYear" : "June 2014",
+        "afterYear" : "May 2019",
+        "lines" : [
+            "Architecting UI Flows for various projects across teams.",
+            "Building reusable and testable UI node modules which can be driven through backend."
+        ]
+      }
+  ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
