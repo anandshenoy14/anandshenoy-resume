@@ -707,3 +707,17 @@ pre tt:after {
     font-size: 100%;
   }
 }
+@media all and (min-width:320px) and (max-width: 1024px) {
+  html {
+    font-size: 80%;
+  }
+  .profile{
+    display: none;
+  }
+  .header-panel{
+    display: none;
+  }
+  .cards-container{
+    margin : 1px;
+  }
+}
