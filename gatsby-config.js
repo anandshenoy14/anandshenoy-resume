@@ -52,7 +52,7 @@ module.exports = {
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
         // Any additional optional fields
-        sampleRate: 5,
+        sampleRate: 100,
         siteSpeedSampleRate: 10,
         cookieDomain: "anandpshenoy.com",
       },
